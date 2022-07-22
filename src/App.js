@@ -45,7 +45,7 @@ function App() {
       <h4>{gameState.victory ? `Done! Woot! Time: ${gameState.endTime}ms` : null}</h4>
       <input value={userText} onChange={updateUserText} /> 
       <hr />
-      {buttonTextItems.map((textItem, index)=> 
+      {buttonTextItems.map((snippetText, index)=> 
       <button key={index} onClick={() => chooseSnippet(index)}>{snippetText}</button>)}
     </div>
   ); 
